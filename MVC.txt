@@ -1,0 +1,44 @@
+
+Model View Controller...
+
+Model View Controller is a popular way of seperating all the code in a large project into three sections; a Model section, a View section and a Controller section.
+
+Model: the backend that contains all the complex data logic.
+
+View: Where the frontend javascript and html is dynamically rendered.
+
+Controller: The controller is just an interface that handles requests. So you can think of it as simply GET requests and POST requests, but the code inside those requests, they are written in the Model. The Controller is a simple interface, the complex code that is invoked in this area, originates in the Model.
+
+
+
+- A request is sent by a user on their device
+
+- This request is sent to the Controller
+
+- The Controller requests Data from the Model based off the specifics of the user request
+
+- The Model interacts with the database, based on the request it was sent by the Controller
+
+- The Model sends back the relevant data to the Controller
+
+- The Controller then sends the relevant data to the View
+
+- In the View, the frontend javascript and html is dynamically rendered based off the data that was sent to it
+
+- Once that dynamically rendered code is ready in the View, it will be sent back to the Controller.
+
+- The Controller then sends this information back to the user
+
+
+
+The Model is the section of the code that actually interacts with the database. The Model only cares about interacting with the data, it does not care about interacting with the requests themselves or what happens if those requests fails. That is entirely the Controller's job.
+
+The View is only concerned about rendering the html/javascript based off what has been sent to it by the Controller. Meaning, the View conditionally renders based off what the Controller sends it.
+
+As you can see, the Controller is very much the control centre
+
+
+
+THE MODEL AND VIEW NEVER INTERACT WITH EACHOTHER.
+
+This is great because that means the presentation of data and the logic of data remain seperate.
