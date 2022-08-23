@@ -1,0 +1,35 @@
+
+{{!-- all of this will be rendered as {{{body}}} --}}
+
+<h1>Check out this really cool list</h1>
+<p>Check it out</p>
+
+<ul>
+    <li>list item 1</li>
+    <li>list item 2</li>
+    <li>list item 3</li>
+    <li>list item 4</li>
+    <li>list item 5</li>
+</ul>
+
+{{!-- partial --}}
+{{> orderedList}}
+
+
+
+{{!-- this is how you use conditional rendering in handlebars --}}
+{{!-- start the block with {{#if}} --}}
+{{!-- end the block with {{/if}} --}}
+
+{{!-- this will be rendered --}}
+{{#if thisIsTrue}}
+    <h3>Only render this h3 element if condition is true</h3>
+{{/if}}
+
+
+
+{{!-- this will not be rendered --}}
+{{#if thisIsFalse}}
+    <h3>This should not be rendered</h3>
+{{/if}}
+
