@@ -1,0 +1,27 @@
+{
+  "name": "learning-handlebarsjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ishan-Wijesingha99/Learning-HandlebarsJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ishan-Wijesingha99/Learning-HandlebarsJS/issues"
+  },
+  "homepage": "https://github.com/Ishan-Wijesingha99/Learning-HandlebarsJS#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

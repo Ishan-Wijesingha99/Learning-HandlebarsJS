@@ -1,0 +1,24 @@
+
+/* you always put css files in the public folder inside css folder */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: aquamarine;
+    font-weight: 900;
+    margin: 10px;   
+}
+
+p {
+    background-color: bisque;
+    margin: 10px;
+}
+
+li {
+    background-color: aqua;
+    font-weight: bold;
+    margin: 10px;
+}
