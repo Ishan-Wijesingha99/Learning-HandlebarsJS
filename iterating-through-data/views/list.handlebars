@@ -1,0 +1,30 @@
+
+{{!-- all of this will be rendered as {{{body}}} --}}
+
+<h1>Check out this really cool list</h1>
+<p>Check it out</p>
+
+<ul>
+    <li>list item 1</li>
+    <li>list item 2</li>
+    <li>list item 3</li>
+    <li>list item 4</li>
+    <li>list item 5</li>
+</ul>
+
+{{!-- partial --}}
+{{> orderedList}}
+
+
+
+{{!-- this is how you iterate over an array --}}
+
+{{!-- you need to start the loop with a {{#each}} --}}
+{{!-- you need to end the loop with a {{/each}} --}}
+{{!-- this is how you tell handlebars where it starts and ends --}}
+{{!-- this keyword points to the current iteration's element --}}
+<ul>
+    {{#each objectArray}}
+        <li>Hello, my name is {{this.firstName}} {{this.lastName}}, I am {{this.age}} years old, and I go to {{this.university}}</li>
+    {{/each}}
+</ul>
