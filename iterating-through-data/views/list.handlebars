@@ -28,3 +28,13 @@
         <li>Hello, my name is {{this.firstName}} {{this.lastName}}, I am {{this.age}} years old, and I go to {{this.university}}</li>
     {{/each}}
 </ul>
+
+
+
+{{!-- using the |element| notation--}}
+{{!-- all this does is change "this" to whatever you write inside | | --}}
+<ul>
+    {{#each objectArray as |element|}}
+        <li>Hello, my name is {{element.firstName}} {{element.lastName}}, I am {{element.age}} years old, and I go to {{element.university}}</li>
+    {{/each}}
+</ul>
