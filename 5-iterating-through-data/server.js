@@ -48,7 +48,7 @@ const arrayOfObjects = [
 
 app.get('/', (req, res) => {
     // to make the arrayOfObjects available in handlebars, add it as a property
-    res.render('list', {layout: 'main', objectArray: arrayOfObjects})
+    res.render('list', {objectArray: arrayOfObjects})
 })
 
 

@@ -18,7 +18,7 @@ app.use(express.static('./public'))
 
 app.get('/', (req, res) => {
     // list.handlebars will be rendered as {{{body}}} in main.handlebars
-    res.render('list', {layout: 'main'})
+    res.render('list')
 })
 
 

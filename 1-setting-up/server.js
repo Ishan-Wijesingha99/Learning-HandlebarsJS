@@ -14,10 +14,12 @@ app.use(express.static('./public'))
 
 app.get('/', (req, res) => {
     // when sending html files with handlebars, instead of send(), use render()
-    // render() takes two parameters 
-    // the first should be 'main' so that it points to main.handlebars
-    // the second is an object with a layout property which points to the index.handlebars file
-    res.render('list', {layout: 'main'})
+    // whatever is in the layouts folder WILL be the backbone of every url, you don't have to specify it, that's what it will always be
+
+    // what matters is what is displayed in {{{body}}}
+    // the first argument in .render() is a string that points to the handlebars file you want to render in {{{body}}}
+    // the second argument is an object that has properties, each of these properties are variables/functions you want to get access too in that particular handlebars file that you mentioned in the first argument
+    res.render('list')
 })
 
 app.listen(5000, () => {

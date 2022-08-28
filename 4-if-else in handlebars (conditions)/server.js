@@ -18,7 +18,7 @@ app.use(express.static('./public'))
 
 app.get('/', (req, res) => {
     // let's use two different variables for the two different booleans
-    res.render('list', {layout: 'main', thisIsTrue: true, thisIsFalse: false})
+    res.render('list', {thisIsTrue: true, thisIsFalse: false})
 })
 
 

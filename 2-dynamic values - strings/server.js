@@ -26,7 +26,7 @@ const greetingString = function() {
 app.get('/', (req, res) => {
     // to dynamically render a string using handlebars, just add it as a property to the object
     // can also just do greeting: 'Hello there!' , that would work the same
-    res.render('list', {layout: 'main', greeting: greetingString()})
+    res.render('list', {greeting: greetingString()})
 })
 
 
